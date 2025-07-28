@@ -4,6 +4,7 @@ import About from "../layouts/About";
 import Popular from "../layouts/Popular";
 import Tournament from "../layouts/Tournament";
 import Sale from "../layouts/Sale";
+import Store from "../layouts/Store";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Popular/>
       <Tournament/>
       <Sale/>
+      <Store/>
     </>
   );
 };
