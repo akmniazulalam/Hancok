@@ -3,6 +3,7 @@ import Banner from "../layouts/Banner";
 import About from "../layouts/About";
 import Popular from "../layouts/Popular";
 import Tournament from "../layouts/Tournament";
+import Sale from "../layouts/Sale";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <About />
       <Popular/>
       <Tournament/>
+      <Sale/>
     </>
   );
 };

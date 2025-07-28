@@ -6,7 +6,12 @@ import Image from "../Image";
 import TourOne from "/src/assets/tour-1 1.png";
 import TourTwo from "/src/assets/tour-2 1.png";
 import TourThree from "/src/assets/tour-3 1.png";
+import ContestOne from "/src/assets/contest1 1.png";
+import ContestTwo from "/src/assets/contest2 1.png";
+import ContestThree from "/src/assets/contest3 1.png";
+import ContestFour from "/src/assets/contest4 1.png";
 import { FaPlay } from "react-icons/fa";
+import CountdownTimer from "../CountdownTimer";
 
 const Tournament = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -171,6 +176,41 @@ const Tournament = () => {
             )}
           </div>
         </Flex>
+        <div className="px-[109px]">
+          <p className="font-barlow font-medium text-[25px] text-white text-center pb-12">
+            PREVIOUS MATCHES
+          </p>
+          <Flex className={"justify-between"}>
+            <div className="clipPolygon bg-poly w-[426px] h-[118px] flex justify-between items-center">
+              <Image src={ContestOne} alt={"contest1 1.png"} />
+              <p className="font-barlow font-medium text-[32px] text-white pr-12">
+                TEAM DELTA
+              </p>
+            </div>
+            <CountdownTimer timeString="9 : 12" />
+            <div className="clipPolygonTwo bg-poly w-[426px] h-[118px] flex justify-between items-center">
+              <p className="font-barlow font-medium text-[32px] text-white pl-12">
+                TEAM ALPHA
+              </p>
+              <Image src={ContestTwo} alt={"contest2 1.png"} />
+            </div>
+          </Flex>
+          <Flex className={"justify-between pt-13"}>
+            <div className="clipPolygon bg-poly w-[426px] h-[118px] flex justify-between items-center">
+              <Image src={ContestThree} alt={"contest3 1.png"} />
+              <p className="font-barlow font-medium text-[32px] text-white pr-12">
+                TEAM DEVILS
+              </p>
+            </div>
+            <CountdownTimer timeString="17:8" />
+            <div className="clipPolygonTwo bg-poly w-[426px] h-[118px] flex justify-between items-center">
+              <p className="font-barlow font-medium text-[32px] text-white pl-12">
+                TEAM NINJA
+              </p>
+              <Image src={ContestFour} alt={"contest4 1.png"} />
+            </div>
+          </Flex>
+        </div>
       </Container>
     </div>
   );
