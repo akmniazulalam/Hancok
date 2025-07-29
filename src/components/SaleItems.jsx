@@ -6,7 +6,7 @@ import { FaPlus } from "react-icons/fa";
 
 const SaleItems = ({src, alt, heading, pText}) => {
   return (
-    <div className='relative group cursor-pointer'>
+    <div className='relative group cursor-pointer w-full'>
         <Image src={src} alt={alt} className={"w-full h-full object-cover"}/>
         <Heading heading={heading} as={"h4"} className={"!font-barlow font-semibold text-[22px] pt-[15px] pb-[12px]"} />
         <p className='font-oswald text-base text-[#666666]'>{pText}</p>

@@ -7,11 +7,6 @@ import SaleOne from "/src/assets/sale1 1.png";
 import SaleTwo from "/src/assets/sale3 1.png";
 import SaleThree from "/src/assets/sale4 1.png";
 import SaleFour from "/src/assets/sale5 1.png";
-import CategoryOne from "/src/assets/category-4 1.png";
-import CategoryTwo from "/src/assets/category-2 1.png";
-import CategoryThree from "/src/assets/category-1 1.png";
-import CategoryFour from "/src/assets/category-3 1.png";
-import CategoryFive from "/src/assets/category-5 1.png";
 
 const Sale = () => {
   const images = [
@@ -70,6 +65,7 @@ const Sale = () => {
           <SaleItems
             src={SaleOne}
             alt={"sale1 1.png"}
+            
             heading={"Horizon Zero Dawn™ Complet..."}
             pText={"Guerrilla Games"}
           />
