@@ -3,52 +3,51 @@ import Container from "../Container";
 import Heading from "../Heading";
 import Flex from "../Flex";
 import SaleItems from "../SaleItems";
+import Image from "../Image"; // ✅ using custom Image component
 import SaleOne from "/src/assets/sale1 1.png";
 import SaleTwo from "/src/assets/sale3 1.png";
 import SaleThree from "/src/assets/sale4 1.png";
 import SaleFour from "/src/assets/sale5 1.png";
 
-const Sale = () => {
-  const images = [
-    "/src/assets/category-4 1.png",
-    "/src/assets/category-2 1.png",
-    "/src/assets/category-3 1.png",
-    "/src/assets/category-5 1.png",
-    "/src/assets/category-1 1.png",
-  ];
+import Img1 from "/src/assets/category-4 1.png";
+import Img2 from "/src/assets/category-2 1.png";
+import Img3 from "/src/assets/category-3 1.png";
+import Img4 from "/src/assets/category-5 1.png";
+import Img5 from "/src/assets/category-1 1.png";
 
+const Sale = () => {
   const [active, setActive] = useState(0);
 
   const nextSlide = () => {
-    setActive((prev) => (prev + 1) % images.length);
+    setActive((prev) => (prev + 1) % 5); // 5 images total
   };
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setActive((prev) => (prev + 1) % images.length);
-    }, 2000); // 3 sec per slide
+      setActive((prev) => (prev + 1) % 5);
+    }, 2000);
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, []);
 
-  // Helper: position calculation
   const getPositionStyles = (index) => {
-    const position = (index - active + images.length) % images.length;
+    const position = (index - active + 5) % 5;
 
     switch (position) {
-      case 0: // Center big image
+      case 0:
         return "z-40 scale-110 translate-x-0";
-      case 1: // Right side
+      case 1:
         return "z-30 scale-90 translate-x-[70px]";
-      case 4: // Left side
+      case 4:
         return "z-30 scale-90 -translate-x-[70px]";
-      case 2: // Far right (behind)
+      case 2:
         return "z-20 scale-80 translate-x-[120px]";
-      case 3: // Far left (behind)
+      case 3:
         return "z-20 scale-80 -translate-x-[120px]";
       default:
         return "";
     }
   };
+
   return (
     <div className="bg-popularBg pt-24 pb-20">
       <Container>
@@ -65,7 +64,6 @@ const Sale = () => {
           <SaleItems
             src={SaleOne}
             alt={"sale1 1.png"}
-            
             heading={"Horizon Zero Dawn™ Complet..."}
             pText={"Guerrilla Games"}
           />
@@ -88,6 +86,7 @@ const Sale = () => {
             pText={"Brace Yourself Games"}
           />
         </Flex>
+
         <div className="">
           <p className="font-barlow font-medium text-[20px] text-white pb-7">
             Hancok Games Catalog
@@ -113,17 +112,34 @@ const Sale = () => {
                 Browse All
               </button>
             </div>
+
+            {/* ✅ Manually written Image tags for slider */}
             <div className="relative w-[426px] h-[370px] mx-auto flex items-center justify-center overflow-hidden">
-              {images.map((img, index) => (
-                <img
-                  key={index}
-                  src={img}
-                  alt={`Slide ${index}`}
-                  className={`absolute w-[258px] h-[370px] object-cover shadow-lg transition-all duration-300 ${getPositionStyles(
-                    index
-                  )}`}
-                />
-              ))}
+              <Image
+                src={Img1}
+                alt="Slide 1"
+                className={`absolute w-[258px] h-[370px] object-cover shadow-lg transition-all duration-300 ${getPositionStyles(0)}`}
+              />
+              <Image
+                src={Img2}
+                alt="Slide 2"
+                className={`absolute w-[258px] h-[370px] object-cover shadow-lg transition-all duration-300 ${getPositionStyles(1)}`}
+              />
+              <Image
+                src={Img3}
+                alt="Slide 3"
+                className={`absolute w-[258px] h-[370px] object-cover shadow-lg transition-all duration-300 ${getPositionStyles(2)}`}
+              />
+              <Image
+                src={Img4}
+                alt="Slide 4"
+                className={`absolute w-[258px] h-[370px] object-cover shadow-lg transition-all duration-300 ${getPositionStyles(3)}`}
+              />
+              <Image
+                src={Img5}
+                alt="Slide 5"
+                className={`absolute w-[258px] h-[370px] object-cover shadow-lg transition-all duration-300 ${getPositionStyles(4)}`}
+              />
             </div>
           </div>
         </div>
