@@ -17,20 +17,24 @@ import GalThree from "/src/assets/gal3 1.png";
 import GalFour from "/src/assets/gal4 1.png";
 import GalFive from "/src/assets/gal5 1.png";
 import GalSix from "/src/assets/gal6 1.png";
-import "yet-another-react-lightbox/styles.css";
 import Lightbox from "yet-another-react-lightbox";
+import "yet-another-react-lightbox/styles.css"; 
+
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
+import Download from "yet-another-react-lightbox/plugins/download";
 
 const Footer = () => {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
   const slides = [
-    { src: "/src/assets/gal1 1.png" },
-    { src: "/src/assets/gal2 1.png" },
-    { src: "/src/assets/gal3 1.png" },
-    { src: "/src/assets/gal4 1.png" },
-    { src: "/src/assets/gal5 1.png" },
-    { src: "/src/assets/gal6 1.png" },
+    { src: GalOne },
+    { src: GalTwo },
+    { src: GalThree },
+    { src: GalFour },
+    { src: GalFive },
+    { src: GalSix },
   ];
   return (
     <div className="bg-popularBg pb-5 relative">
@@ -168,7 +172,7 @@ const Footer = () => {
                 alt={"gal2 1.png"}
                 className={"h-full w-full object-cover"}
                 onClick={() => {
-                  setIndex(0);
+                  setIndex(1);
                   setOpen(true);
                 }}
               />
@@ -177,7 +181,7 @@ const Footer = () => {
                 alt={"gal3 1.png"}
                 className={"h-full w-full object-cover"}
                 onClick={() => {
-                  setIndex(0);
+                  setIndex(2);
                   setOpen(true);
                 }}
               />
@@ -186,7 +190,7 @@ const Footer = () => {
                 alt={"gal4 1.png"}
                 className={"h-full w-full object-cover"}
                 onClick={() => {
-                  setIndex(0);
+                  setIndex(3);
                   setOpen(true);
                 }}
               />
@@ -195,7 +199,7 @@ const Footer = () => {
                 alt={"gal5 1.png"}
                 className={"h-full w-full object-cover"}
                 onClick={() => {
-                  setIndex(0);
+                  setIndex(4);
                   setOpen(true);
                 }}
               />
@@ -204,7 +208,7 @@ const Footer = () => {
                 alt={"gal6 1.png"}
                 className={"h-full w-full object-cover"}
                 onClick={() => {
-                  setIndex(0);
+                  setIndex(5);
                   setOpen(true);
                 }}
               />
@@ -213,7 +217,13 @@ const Footer = () => {
                 close={() => setOpen(false)}
                 slides={slides}
                 index={index}
+                className="custom-lightbox"
                 on={{ view: ({ index }) => setIndex(index) }}
+                plugins={[Zoom, Fullscreen, Download]}
+                zoom={{
+                  maxZoomPixelRatio: 4,
+                  scrollToZoom: true,
+                }}
               />
             </div>
           </div>
