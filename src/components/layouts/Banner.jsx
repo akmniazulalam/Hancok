@@ -32,7 +32,7 @@ const Banner = () => {
           dolore similique ad adipisci eum. Quos aliquid fugiat magni illum
           eius?
         </p>
-        <button className="flex items-end gap-x-2 font-oswald text-base text-textC bg-white py-[15px] px-[25px] mt-14">
+        <button className="cursor-pointer flex items-end gap-x-2 font-oswald text-base text-textC bg-white py-[15px] px-[25px] mt-14">
           View More <FaAngleDoubleRight className="text-[21px]" />
         </button>
         <Flex className={"pt-[250px] gap-x-6"}>

@@ -75,7 +75,7 @@ const About = () => {
               sed odio temporibus magni quia eveniet odit placeat repellat quod
               ipsum modi necessitatibus, dolorum officia!
             </p>
-            <button className="flex items-end gap-x-2 font-oswald text-base text-white bg-[#212121] py-[12px] px-[25px] mt-6">
+            <button className="cursor-pointer flex items-end gap-x-2 font-oswald text-base text-white bg-[#212121] py-[12px] px-[25px] mt-6">
               View More <FaAngleDoubleRight className="text-[21px]" />
             </button>
           </div>

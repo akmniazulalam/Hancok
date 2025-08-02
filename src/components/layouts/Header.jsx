@@ -58,7 +58,7 @@ const Header = () => {
               <SignOut />
               Sign In
             </button>
-            <FaSearch className="text-white" />
+            <FaSearch className="text-white cursor-pointer" />
           </div>
         </Flex>
       </Container>

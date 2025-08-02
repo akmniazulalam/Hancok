@@ -161,7 +161,7 @@ const Footer = () => {
               <Image
                 src={GalOne}
                 alt={"gal1 1.png"}
-                className={"h-full w-full object-cover"}
+                className={"h-full w-full object-cover cursor-pointer"}
                 onClick={() => {
                   setIndex(0);
                   setOpen(true);
@@ -170,7 +170,7 @@ const Footer = () => {
               <Image
                 src={GalTwo}
                 alt={"gal2 1.png"}
-                className={"h-full w-full object-cover"}
+                className={"h-full w-full object-cover cursor-pointer"}
                 onClick={() => {
                   setIndex(1);
                   setOpen(true);
@@ -179,7 +179,7 @@ const Footer = () => {
               <Image
                 src={GalThree}
                 alt={"gal3 1.png"}
-                className={"h-full w-full object-cover"}
+                className={"h-full w-full object-cover cursor-pointer"}
                 onClick={() => {
                   setIndex(2);
                   setOpen(true);
@@ -188,7 +188,7 @@ const Footer = () => {
               <Image
                 src={GalFour}
                 alt={"gal4 1.png"}
-                className={"h-full w-full object-cover"}
+                className={"h-full w-full object-cover cursor-pointer"}
                 onClick={() => {
                   setIndex(3);
                   setOpen(true);
@@ -197,7 +197,7 @@ const Footer = () => {
               <Image
                 src={GalFive}
                 alt={"gal5 1.png"}
-                className={"h-full w-full object-cover"}
+                className={"h-full w-full object-cover cursor-pointer"}
                 onClick={() => {
                   setIndex(4);
                   setOpen(true);
@@ -206,7 +206,7 @@ const Footer = () => {
               <Image
                 src={GalSix}
                 alt={"gal6 1.png"}
-                className={"h-full w-full object-cover"}
+                className={"h-full w-full object-cover cursor-pointer"}
                 onClick={() => {
                   setIndex(5);
                   setOpen(true);
