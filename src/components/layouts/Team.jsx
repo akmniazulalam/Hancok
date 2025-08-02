@@ -42,18 +42,18 @@ const Team = () => {
               </div>
               <div className="overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out group-hover:max-h-[500px] group-hover:opacity-100">
                 <Flex className="justify-between">
-                  <button className="py-[9px] px-5 bg-iconC font-oswald text-base text-white">
+                  <button className="py-[9px] px-5 bg-iconC font-oswald text-base text-white cursor-pointer">
                     Know more
                   </button>
 
                   <Flex className="gap-x-5 pr-5">
-                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black">
+                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black cursor-pointer">
                       <FaFacebookF className="text-[20px] text-white" />
                     </div>
-                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black">
+                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black cursor-pointer">
                       <FaLinkedinIn className="text-[20px] text-white" />
                     </div>
-                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black">
+                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black cursor-pointer">
                       <FaTwitter className="text-[20px] text-white" />
                     </div>
                   </Flex>
@@ -81,18 +81,18 @@ const Team = () => {
               </div>
               <div className="overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out group-hover:max-h-[500px] group-hover:opacity-100">
                 <Flex className="justify-between">
-                  <button className="py-[9px] px-5 bg-iconC font-oswald text-base text-white">
+                  <button className="py-[9px] px-5 bg-iconC font-oswald text-base text-white cursor-pointer">
                     Know more
                   </button>
 
                   <Flex className="gap-x-5 pr-5">
-                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black">
+                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black cursor-pointer">
                       <FaFacebookF className="text-[20px] text-white" />
                     </div>
-                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black">
+                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black cursor-pointer">
                       <FaLinkedinIn className="text-[20px] text-white" />
                     </div>
-                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black">
+                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black cursor-pointer">
                       <FaTwitter className="text-[20px] text-white" />
                     </div>
                   </Flex>
@@ -120,18 +120,18 @@ const Team = () => {
               </div>
               <div className="overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out group-hover:max-h-[500px] group-hover:opacity-100">
                 <Flex className="justify-between">
-                  <button className="py-[9px] px-5 bg-iconC font-oswald text-base text-white">
+                  <button className="py-[9px] px-5 bg-iconC font-oswald text-base text-white cursor-pointer">
                     Know more
                   </button>
 
                   <Flex className="gap-x-5 pr-5">
-                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black">
+                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black cursor-pointer">
                       <FaFacebookF className="text-[20px] text-white" />
                     </div>
-                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black">
+                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black cursor-pointer">
                       <FaLinkedinIn className="text-[20px] text-white" />
                     </div>
-                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black">
+                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black cursor-pointer">
                       <FaTwitter className="text-[20px] text-white" />
                     </div>
                   </Flex>
@@ -159,18 +159,18 @@ const Team = () => {
               </div>
               <div className="overflow-hidden max-h-0 opacity-0 transition-all duration-500 ease-in-out group-hover:max-h-[500px] group-hover:opacity-100">
                 <Flex className="justify-between">
-                  <button className="py-[9px] px-5 bg-iconC font-oswald text-base text-white">
+                  <button className="py-[9px] px-5 bg-iconC font-oswald text-base text-white cursor-pointer">
                     Know more
                   </button>
 
                   <Flex className="gap-x-5 pr-5">
-                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black">
+                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black cursor-pointer">
                       <FaFacebookF className="text-[20px] text-white" />
                     </div>
-                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black">
+                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black cursor-pointer">
                       <FaLinkedinIn className="text-[20px] text-white" />
                     </div>
-                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black">
+                    <div className="h-[35px] w-[35px] flex justify-center items-center bg-iconC rounded-full border border-black cursor-pointer">
                       <FaTwitter className="text-[20px] text-white" />
                     </div>
                   </Flex>
