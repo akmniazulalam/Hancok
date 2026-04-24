@@ -1,3 +1,4 @@
+
 @keyframes header {
     from{
         transform: translateY(-100px);
@@ -10,12 +11,16 @@
     animation: header 1s;
 }
 
+
+
 .clipPolygon{
     clip-path: polygon(0 0, 100% 0%, 90% 100%, 0 100%);
 }
 .clipPolygonTwo{
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 10% 100%);
 }
+
+
 
 img.yarl__slide_image {
     max-width: 400px !important;
